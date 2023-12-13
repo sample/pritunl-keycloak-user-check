@@ -27,9 +27,9 @@ Follow these steps to deploy the `pritunl-keycloak-user-check` script on your Pr
 1. Ensure you have a Keycloak client set up for your Pritunl server.
 2. Place the script to the Pritunl plugins directory. By default, this directory is `/var/lib/pritunl/plugins`.
 3. Adjust the parameters in the script as per your Keycloak configuration.
-4. sudo systemctl restart pritunl
-5. Check the Pritunl logs to ensure that the plugin is loaded correctly and functioning as expected `tail /var/log/pritunl.log -n 100`
-6. Test the VPN connection to confirm that the user status checks against Keycloak are functioning correctly. Attempt to connect with a user that is both enabled and disabled in Keycloak to see if the script behaves as expected.
+4. sudo `systemctl restart pritunl`.
+5. Check the Pritunl logs to ensure that the plugin is loaded correctly and functioning as expected `tail /var/log/pritunl.log -n 100`.
+6. Test the VPN connection to confirm that the user status checks against Keycloak are functioning correctly. Attempt to connect with a user that. is both enabled and disabled in Keycloak to see if the script behaves as expected.
 
 ## How to setup Pritunl SAML integration with keycloak
 See [PRITUNL-SAML-KEYCLOAK-INTEGRATON.md](PRITUNL-SAML-KEYCLOAK-INTEGRATON.md) file

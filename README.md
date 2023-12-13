@@ -5,8 +5,8 @@ The `pritunl-keycloak-user-check` is a plugin for Pritunl that checks if a user 
 
 ## What the Script Does
 The script acts as a middleware between Pritunl and Keycloak, performing real-time user status checks during VPN connection attempts. It ensures that:
-- Only users with valid credentials in Keycloak are allowed to access the Pritunl VPN.
-- Users blocked in Keycloak or with unverified email (optional check) are denied VPN access.
+- Only users who exist in Keycloak and are not blocked are allowed to access the Pritunl VPN.
+- Users blocked with unverified email (optional check) are denied VPN access.
 
 ## Configuration Parameters
 Before deploying the script, you need to adjust several parameters to match your Keycloak and Pritunl setup:

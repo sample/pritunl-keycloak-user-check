@@ -18,7 +18,7 @@ Before deploying the script, you need to adjust several parameters to match your
 - `DEBUG`: Set to `True` for detailed logging, useful for debugging.
 - `SEARCH_BY_EMAIL`: Set to `True` to search users by email, `False` to search by username.
 - `CHECK_EMAIL_VERIFICATION`: Set to `True` to require email verification in Keycloak for VPN access.
-- 
+
 ## Installation
 
 Follow these steps to deploy the `pritunl-keycloak-user-check` script on your Pritunl server:

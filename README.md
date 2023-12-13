@@ -28,7 +28,7 @@ Before deploying the script, you need to adjust several parameters to match your
 ## Installation
 
 
-## Script installation
+### Script installation
 Follow these steps to deploy the `pritunl-keycloak-user-check` script on your Pritunl server:
 
 1. Ensure you have a Keycloak client set up for your Pritunl server.

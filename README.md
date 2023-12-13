@@ -42,7 +42,7 @@ Follow these steps to deploy the `pritunl-keycloak-user-check` script on your Pr
 TODO
 
 ## How to setup Pritunl SAML integration with keycloak
-See [PRITUNL-SAML-KEYCLOAK-INTEGRATON.md](PRITUNL-SAML-KEYCLOAK-INTEGRATON.md) file
+See [PRITUNL-SAML-KEYCLOAK-INTEGRATION.md](PRITUNL-SAML-KEYCLOAK-INTEGRATION.md) file
 
 ## Contribution
 Contributions to this project are welcome! Please feel free to fork the repository, make your changes on a feature branch, and submit a pull request.

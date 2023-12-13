@@ -23,7 +23,6 @@ Before deploying the script, you need to adjust several parameters to match your
 
 Follow these steps to deploy the `pritunl-keycloak-user-check` script on your Pritunl server:
 
-## How to Use
 1. Ensure you have a Keycloak client set up for your Pritunl server.
 2. Place `kk-user-check.py` to the Pritunl plugins directory. By default, this directory is `/var/lib/pritunl/plugins`.
 3. Adjust the parameters in the script as per your Keycloak configuration.

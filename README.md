@@ -39,7 +39,7 @@ Follow these steps to deploy the `pritunl-keycloak-user-check` script on your Pr
 6. Test the VPN connection to confirm that the user status checks against Keycloak are functioning correctly. Attempt to connect with a user that. is both enabled and disabled in Keycloak to see if the script behaves as expected.
 
 ### Keycloak client setup
-<TODO>
+TODO
 
 ## How to setup Pritunl SAML integration with keycloak
 See [PRITUNL-SAML-KEYCLOAK-INTEGRATON.md](PRITUNL-SAML-KEYCLOAK-INTEGRATON.md) file

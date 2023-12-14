@@ -23,7 +23,7 @@ Before deploying the script, you need to adjust several parameters to match your
 
 - **Keycloak Availability:** If Keycloak is unavailable, VPN users will be denied authorization. This dependency means that the VPN access control is directly tied to Keycloak's uptime.
 - **User Existence and Status Checks:** The script only verifies whether a user exists in Keycloak and whether they are active. Participation in groups and realm roles are not checked, which limits the scope of access control to basic user status.
-- **Persistent VPN Connections:** If a user is connected to the VPN and is subsequently blocked in Keycloak, their VPN connection will not be terminated automatically. This behavior may lead to potential security concerns where blocked users retain access until their session ends or is manually terminated.
+- **Persistent VPN Connections:** If a user is connected to the VPN and is subsequently blocked in Keycloak, their VPN connection will not be terminated automatically. This behavior may lead to potential security concerns where blocked users retain access until their session ends or is manually terminated. However, you can set the "User Session Timeout" parameter in each pritunl server config to ensure that the connection is forcibly terminated and a reconnection occurs.
 
 ## Installation
 

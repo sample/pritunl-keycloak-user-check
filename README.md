@@ -1,7 +1,7 @@
 # pritunl-keycloak-user-check
 
 ## Description
-The `pritunl-keycloak-user-check` is a plugin for Pritunl that checks if a user is available in Keycloak. It enhances the security and flexibility of VPN access management by leveraging Keycloak's authentication system. This repository also includes documentation on integrating Pritunl SSO with Keycloak.
+The `pritunl-keycloak-user-check` is a plugin for Pritunl that checks if a user is available in Keycloak. It enhances the security and flexibility of VPN access management by leveraging Keycloak's authentication system. This repository also includes documentation on integrating Pritunl SSO with Keycloak. **You NEED Pritunl Enterprise subscription for this integration**
 
 ## What the Script Does
 The script acts as a middleware between Pritunl and Keycloak, performing real-time user status checks during VPN connection attempts. It ensures that:

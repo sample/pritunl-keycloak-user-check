@@ -39,10 +39,27 @@ Follow these steps to deploy the `pritunl-keycloak-user-check` script on your Pr
 6. Test the VPN connection to confirm that the user status checks against Keycloak are functioning correctly. Attempt to connect with a user that. is both enabled and disabled in Keycloak to see if the script behaves as expected.
 
 ### Keycloak client setup
-TODO
 
-## How to setup Pritunl SAML integration with keycloak
-See [PRITUNL-SAML-KEYCLOAK-INTEGRATION.md](PRITUNL-SAML-KEYCLOAK-INTEGRATION.md) file
+Set up a new client in Keycloak with the following example configuration:
+
+1. Client Type: *OpenID Connect*
+2. Client ID: *pritunl-user-check*
+3. Name: *Pritunl user check client*
+4. Client authentication: *On*
+6. Authorization: *Off*
+7. Authentication flow: disable all and set *Service accounts roles*
+
+Credentials page:
+1. Client Authenticator: *Client Id and Secret*
+Press "Save"
+
+In Service accounts roles page:
+1. Press Assign role:
+2. Select *Filter by clients*
+3. Select *view-users* (should be *realm-management* label)
+4. Press "Assign"
+
+Use Client Id and Client Secret from Credentials page as CLIENT_ID and CLIENT_SECRET in plugin setup.
 
 ## Contribution
 Contributions to this project are welcome! Please feel free to fork the repository, make your changes on a feature branch, and submit a pull request.

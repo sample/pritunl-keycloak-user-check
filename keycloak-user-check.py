@@ -47,7 +47,7 @@ def should_deny_access(keycloak_token, user_identifier):
 
     # Headers with the authorization token
     headers = {'Authorization': f'Bearer {keycloak_token}'}
-    user_url = f"{KEYCLOAK_URL}/admin/realms/{REALM}/users?{search_param}={user_identifier}"
+    user_url = f"{KEYCLOAK_URL}/admin/realms/{REALM}/users?exact=true&{search_param}={user_identifier}"
     try:
         # Making a GET request to check the user's status
         debug_log(f"Checking user status: URL={user_url}, Headers={headers}")
